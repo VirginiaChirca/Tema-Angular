@@ -1,0 +1,11 @@
+<div>
+    <h2>View Single Todo</h2>
+    <div *ngIf="todo">
+      <h3>{{ todo.title }}</h3>
+      <p>{{ todo.description }}</p>
+      <p>Status: {{ todo.completed ? 'Completed' : 'Not Completed' }}</p>
+    </div>
+    <div *ngIf="!todo">
+      <p>Todo not found.</p>
+    </div>
+  </div>

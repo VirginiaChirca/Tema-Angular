@@ -1,0 +1,9 @@
+<div>
+    <h2>Delete Todo</h2>
+    <form>
+      <label for="todoId">Todo ID</label>
+      <input type="number" id="todoId" [(ngModel)]="id" name="todoId" required>
+
+      <button type="button" (click)="deleteTodo()">Delete Todo</button>
+    </form>
+  </div>
